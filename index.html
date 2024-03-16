@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bulma css template -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>
+    DreamScene
+  </title>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <section class="section">
+
+  <div class="container has-text-centered">
+    <!-- paper title -->
+    <p class="title is-3"> DreamScene: 3D Gaussian-based Text-to-3D Scene Generation via Formation Pattern Sampling </p>
+    <!-- publication -->
+    <!--p class="subtitle is-4"> Arxiv 2024 </p-->
+    <!-- authors -->
+    <!-- affiliations -->
+
+    <!-- other links -->
+    <div class="is-flex is-justify-content-center">
+      <span class="icon-text mx-1">
+        <a class="button is-dark" href="" role="button" target="_blank"> <span class="icon"> <ion-icon name="document-outline"></ion-icon> </span> <span> Arxiv (Coming Soon) </span>  </a> 
+      </span>
+      <span class="icon-text mx-1">
+        <a class="button is-dark" href="https://github.com/DreamScene-Project/DreamScene" role="button" target="_blank"> <span class="icon"> <ion-icon name="logo-github"></ion-icon> </span> <span> Code (Coming Soon) </span> </a> 
+      </span>
+    </div>
+   
+  </div>
+
+  <!-- main container -->
+  <div class="container is-max-desktop has-text-centered">
+
+    <!-- abstract -->
+    <p class="title is-3 mt-5 has-text-centered"> Abstract </p>
+    <p class="content is-size-6 has-text-left">
+Text-to-3D scene generation holds immense potential for the gaming, film, and architecture sectors, increasingly capturing the attention of both academic and industry circles. Despite significant progress, current methods still struggle with maintaining high quality, consistency, and editing flexibility. In this paper, we propose <b>DreamScene</b>, a 3D Gaussian-based novel text-to-3D scene generation framework that leverages Formation Pattern Sampling (FPS) for core structuring, augmented with a strategic camera sampling and supported by holistic object-environment integration to overcome these hurdles. FPS, guided by the formation patterns of 3D objects, employs multi-timesteps sampling to quickly form semantically rich, high-quality representations, uses 3D Gaussian filtering for optimization stability, and leverages reconstruction techniques to generate plausible textures. The camera sampling strategy incorporates a progressive three-stage approach, specifically designed for both indoor and outdoor settings, to effectively ensure scene-wide 3D consistency. DreamScene enhances scene editing flexibility by combining objects and environments, enabling targeted adjustments. Extensive experiments showcase DreamScene's superiority over current state-of-the-art techniques, heralding its wide-ranging potential for diverse applications.
+    </p>
+    
+    <!-- results (videos) -->
+    <p class="title is-3 mt-5 has-text-centered"> Text-to-3D (Scenes) </p>
+    <p class="content has-text-centered is-size-5">
+    <i>High quality, scene-wide 3D consistency, scene editing flexibility, accommodating a vast number of objects.</i>
+    </p>
+    <table class="table" style="table-layout: fixed; width:100%;">
+      <tbody>
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/living_room.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/kitchen_eu.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/bedroom_cyber.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/bedroom_ukiyo.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> A DSLR photo of a living room </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of an European style kitchen </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of a cyberpunk style bedroom, cyberpunk style </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of an Ukiyo-e style bedroom, Ukiyo-e style </td>
+      </tr>
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/space.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/mc.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/zoo.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/autumn_park.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> Gray land at the moon, black tranquil universe in the distance, Sci-fi style </td>
+        <td class="has-text-centered is-size-7"> A minecraft cubes world with lake and mountains in the far distance and grass cubes in the near distance </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo in the open area of the zoo </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of an autumn park </td>
+      </tr>
+    </table>
+
+
+    <p class="title is-3 mt-5 has-text-centered"> Text-to-3D (Objects) </p>
+    <p class="content has-text-centered is-size-5">
+      <i>Quickly form semantically rich, high-quality representations.</i>
+    </p>
+    <table class="table" style="table-layout: fixed; width:100%;">
+      <tbody>
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/hamburger.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/car_wooden.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/car_sushi.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/sandcastle.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/shoes.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/mushroom_house.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> A delicious hamburger </td>
+        <td class="has-text-centered is-size-7"> A wooden car </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of A car made out of sushi </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of a highly-detailed sandcastle </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of A Stylish Air Jordan shoes </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of a mushroom house </td>
+      </tr>
+
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/fountain.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/flower.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/bed_mc.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/peacock2.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/mini_garden.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/tudor_house.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> A DSLR photo of an ornate stone fountain </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of a potted plant with yellow flowers </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of a log-coloured bed, minecraft style </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of a standing peacock with colorful tail feathers </td>
+        <td class="has-text-centered is-size-7"> Mini Garden, highly detailed, 8K, HD </td>
+        <td class="has-text-centered is-size-7"> A zoomed-out DSLR photo of a model of a house in Tudor style </td>
+      </tr>
+
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/batman_fly.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/fruits.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/glass_dice.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/motorcycle.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/pillow.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/truck.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> DSLR photo of the Batman flying in sky, realistic style </td>
+        <td class="has-text-centered is-size-7"> A silver platter piled high with fruits </td>
+        <td class="has-text-centered is-size-7"> A 20-sided die made out of glass </td>
+        <td class="has-text-centered is-size-7"> A blue motorcycle </td>
+        <td class="has-text-centered is-size-7"> A pillow with huskies printed on it </td>
+        <td class="has-text-centered is-size-7"> A DSLR photo of a red pickup truck </td>
+      </tr>
+    </table>
+    <p class="title is-3 mt-5 has-text-centered"> Approach </p>
+    <a href="images/overview.pdf">
+      <img src="images/overview.png" alt="Approach of DreamScene"/>
+    </a>
+    <p class="content has-text-left is-size-6">
+We primarily employ Formation Pattern Sampling, which includes multi-timesteps sampling, 3D Gaussian filtering and reconstructive generation to rapidly produce high-quality and semantically rich 3D representations with realistic textures and has low storage demands. Additionally, DreamScene ensures scene-wide consistency through camera sampling and allows for flexible editing by integrating objects with the environments in the scene.
+    </p>
+  </div>
+
+
+  </section>
+</body>
+</html>
