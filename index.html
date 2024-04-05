@@ -20,7 +20,7 @@
     <!-- paper title -->
     <p class="title is-3"> DreamScene: 3D Gaussian-based Text-to-3D Scene Generation via Formation Pattern Sampling </p>
     <!-- publication -->
-    <!--p class="subtitle is-4"> Arxiv 2024 </p-->
+    <p class="subtitle is-4"> Arxiv 2024 </p>
     <!-- authors -->
     <p class="title is-5 mt-2"> 
       <a href="https://github.com/Jahnsonblack/" target="_blank">Haoran Li</a><sup>1</sup>, 
@@ -28,9 +28,9 @@
       <a href="https://github.com/kitty384/" target="_blank">Wenli Zhang</a><sup>1</sup>, 
       <a href="https://github.com/saiyiii/" target="_blank">Wenjun Wu</a><sup>1</sup>, 
       <a href="" target="_blank">Yong Liao</a><sup>1</sup>, 
-      <a href="" target="_blank">Lin Wang</a><sup>2</sup>, 
-      <a href="" target="_blank">Lik Hang Lee</a><sup>3</sup>, 
-      <a href="" target="_blank">Pengyuan Zhou</a><sup>1</sup>
+      <a href="https://vlislab22.github.io/vlislab/linwang.html" target="_blank">Lin Wang</a><sup>2</sup>, 
+      <a href="https://www.lhlee.com/" target="_blank">Lik-hang Lee</a><sup>3</sup>, 
+      <a href="https://github.com/pengyuan-zhou/" target="_blank">Pengyuan Zhou</a><!--sup>1</sup-->
     </p>
     <!-- affiliations -->
     <p class="subtitle is-5"> 
@@ -42,7 +42,7 @@
     <!-- other links -->
     <div class="is-flex is-justify-content-center">
       <span class="icon-text mx-1">
-        <a class="button is-dark" href="" role="button" target="_blank"> <span class="icon"> <ion-icon name="document-outline"></ion-icon> </span> <span> Arxiv (Coming Soon) </span>  </a> 
+        <a class="button is-dark" href="https://arxiv.org/abs/2404.03575" role="button" target="_blank"> <span class="icon"> <ion-icon name="document-outline"></ion-icon> </span> <span> Arxiv </span>  </a> 
       </span>
       <span class="icon-text mx-1">
         <a class="button is-dark" href="https://github.com/DreamScene-Project/DreamScene" role="button" target="_blank"> <span class="icon"> <ion-icon name="logo-github"></ion-icon> </span> <span> Code (Coming Soon) </span> </a> 
@@ -57,7 +57,7 @@
     <!-- abstract -->
     <p class="title is-3 mt-5 has-text-centered"> Abstract </p>
     <p class="content is-size-6 has-text-left">
-Text-to-3D scene generation holds immense potential for the gaming, film, and architecture sectors, increasingly capturing the attention of both academic and industry circles. Despite significant progress, current methods still struggle with maintaining high quality, consistency, and editing flexibility. In this paper, we propose <b>DreamScene</b>, a 3D Gaussian-based novel text-to-3D scene generation framework that leverages Formation Pattern Sampling (FPS) for core structuring, augmented with a strategic camera sampling and supported by holistic object-environment integration to overcome these hurdles. FPS, guided by the formation patterns of 3D objects, employs multi-timesteps sampling to quickly form semantically rich, high-quality representations, uses 3D Gaussian filtering for optimization stability, and leverages reconstruction techniques to generate plausible textures. The camera sampling strategy incorporates a progressive three-stage approach, specifically designed for both indoor and outdoor settings, to effectively ensure scene-wide 3D consistency. DreamScene enhances scene editing flexibility by combining objects and environments, enabling targeted adjustments. Extensive experiments showcase DreamScene's superiority over current state-of-the-art techniques, heralding its wide-ranging potential for diverse applications.
+Text-to-3D scene generation holds immense potential for the gaming, film, and architecture sectors. Despite significant progress, existing methods struggle with maintaining high quality, consistency, and editing flexibility. In this paper, we propose <b>DreamScene</b>, a 3D Gaussian-based novel text-to-3D scene generation framework, to tackle the aforementioned three challenges mainly via two strategies. First, DreamScene employs Formation Pattern Sampling (FPS), a multi-timestep sampling strategy guided by the formation patterns of 3D objects, to form fast, semantically rich, and high-quality representations. FPS uses 3D Gaussian filtering for optimization stability, and leverages reconstruction techniques to generate plausible textures. Second, DreamScene employs a progressive three-stage camera sampling strategy, specifically designed for both indoor and outdoor settings, to effectively ensure object-environment integration and scene-wide 3D consistency. Last, DreamScene enhances scene editing flexibility by integrating objects and environments, enabling targeted adjustments. Extensive experiments validate DreamScene's superiority over current state-of-the-art techniques, heralding its wide-ranging potential for diverse applications.
     </p>
     
     <!-- results (videos) -->
@@ -156,11 +156,25 @@ Text-to-3D scene generation holds immense potential for the gaming, film, and ar
       <img src="images/overview.png" alt="Approach of DreamScene"/>
     </a>
     <p class="content has-text-left is-size-6">
-We primarily employ Formation Pattern Sampling, which includes multi-timesteps sampling, 3D Gaussian filtering and reconstructive generation to rapidly produce high-quality and semantically rich 3D representations with realistic textures and has low storage demands. Additionally, DreamScene ensures scene-wide consistency through camera sampling and allows for flexible editing by integrating objects with the environments in the scene.
+We primarily employ Formation Pattern Sampling, which includes multi-timestep sampling, 3D Gaussian filtering and reconstructive generation to rapidly produce high-quality and semantically rich 3D representations with plausible textures and low storage demands. Additionally, DreamScene ensures scene-wide consistency through camera sampling and allows for flexible editing by integrating objects with the environments in the scene.
     </p>
+    <!-- citation -->
+    <div class="card mt-4">
+      <header class="card-header">
+        <p class="card-header-title"> Citation </p>
+      </header>
+      <div class="card-content is-size-5 has-text-left">
+<pre><code>
+  @article{li2024dreamscene,
+  title={DreamScene: 3D Gaussian-based Text-to-3D Scene Generation via Formation Pattern Sampling},
+  author={Li, Haoran and Shi, Haolin and Zhang, Wenli and Wu, Wenjun and Liao, Yong and Lin Wang and Lik-hang Lee and Zhou, Pengyuan},
+  journal={arXiv preprint arXiv:2404.03575},
+  year={2024}
+}</code></pre>
+      </div>
+    </div>
+
   </div>
-
-
   </section>
 </body>
 </html>
